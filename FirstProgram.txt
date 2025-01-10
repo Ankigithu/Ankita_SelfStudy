@@ -1,0 +1,64 @@
+package com.demo;
+
+public class First 
+{
+	public static void main(String args[])
+	{
+		
+		//int value;
+		int sub1 = 80;					//initailizing subjects 
+		int sub2 = 80;
+		int sub3 = 80;
+		int sub4 = 80;
+		int sub5 = 80;
+		
+		int  total =(sub1+sub2+sub3+sub4+sub5);		//Total Calculated
+		//float percent =(value/total)*100%;
+		System.out.println("Total : "+ total);
+		
+		float p = (float)total; //TypeCasting
+		float percentage = (float)((p/500.0)*100.0);
+		System.out.println("percentage : "+percentage);
+	}
+}
+Output:
+Total : 400
+percentage : 80.0
+
+
+package com.demo;
+
+public class Area 
+{
+	public static void main(String[] args) 
+	{
+		//Area of Rectangle
+		int length = 5;
+		int breadth = 10;
+		int area_rectangle =  (length*breadth);
+		System.out.println("Area OF Rcetangle :"+area_rectangle);
+		
+		
+		//Area of Circle
+		int radius;
+        double pi = 3.142, area;
+        radius = 5;
+        area = pi * radius * radius;
+        System.out.println("Area of circle is :" + area);
+        
+        
+        //Area of Square
+        int l1, area2;
+        l1 = 5;
+        
+        //Length of Square
+        System.out.println("Length of the square:: " + l1);
+        area2 = l1 * l1;
+        System.out.println("Area of the square is:: " + area2);
+	}
+}
+Output:
+Area OF Rcetangle :50
+Area of circle is :78.55
+Length of the square:: 5
+Area of the square is:: 25
