@@ -1,0 +1,63 @@
+package com.demo;
+public class ConditionalDemo 
+{
+	public static void main(String[] args) 
+	{
+		int demo = 29;
+		
+		int result;
+		
+		result = (demo%2 == 0) ? 0:1;    //Conditional operator
+		
+		System.out.println("Result : "+result)	;
+	}
+}
+Outpu:
+Result : 1
+
+
+package com.demo;
+
+public class LogicalDemo 
+{
+	public static void main(String[] args) 
+	{
+		int first = 22;
+		int second = 11;
+		
+		boolean result;
+		
+		result = ((first%2)==0) && ((second%2)==0);
+		
+		System.out.println(" Result of AND oprator : "+result)	;
+
+		result = ((first%2)==1) || ((second%2)==1);
+		
+		System.out.println("Result of OR operator : "+result)	;
+		
+		boolean result1=!result;
+		
+		System.out.println("Result of NOT operator: " + result1 );
+	}
+}
+Output :
+ Result of AND oprator : false
+Result of OR operator : true
+Result of NOT operator: false
+
+package com.demo;
+
+public class BitwiseDemo 
+{
+	public static void main(String[] args) 
+	{
+		int bitone = 101;
+		int bitwo = 40;
+		
+		int result = (bitone & bitwo);
+		
+		System.out.println("Bitwise AND :"+result);
+	}
+}
+Output :
+Result : 32
