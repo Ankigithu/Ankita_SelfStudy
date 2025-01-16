@@ -1,0 +1,60 @@
+LAB 4
+1.1. Write a program to demonstrate  use of  type casting in java.
+  print result after type casting.
+package com.demo;
+
+public class TypeCasting 
+{
+	public static void main(String[] args) 
+	{ 
+				int a = 14; 
+				long l = a; 
+
+				double d = a; 
+
+				System.out.println("Integer: " + a); 
+				System.out.println("Long: " + l); 
+				System.out.println("Double: " + d); 
+
+	}
+}
+OUTPUT:
+Integer: 14
+Long: 14
+Double: 14.0
+
+2. Write a program to demonstrate use of local, instance and static variables in java.
+
+
+package com.demo;
+
+public class DemoVariables {
+	    
+	    int a = 1; // Instance variable
+
+	    static int b = 2; // Static variable
+
+	    public void displayLocalVariable() {
+	        
+	        int c = 3; // Local variable
+	        System.out.println("Local Variable: " + c);
+	    									}
+
+	    public static void main(String[] args) {
+	        
+	    	DemoVariables obj = new DemoVariables(); // Creating an object to access instance variables
+
+	        System.out.println("Instance Variable: " + obj.a); // Accessing instance variable
+
+	        System.out.println("Static Variable: " + b); // Accessing static variable
+
+	        obj.displayLocalVariable(); // Calling a method to display the local variable
+	    }
+	} 
+
+
+OUTPUT:
+Instance Variable: 1
+Static Variable: 2
+Local Variable: 3
+

@@ -1,0 +1,85 @@
+LAB 2
+1. WAP for creating a mini calculator for performing a particular operation based on user choice. ex. 
+if the user will select the addition operation then the output should be the addition of the given two nos.
+
+
+package com.demo;
+
+public class Calculator 
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("Hello This is Simple Calculator...");
+		int num1=100;
+		int num2=20;
+		System.out.println("Addition is       :"+num1+num2);
+		System.out.println("Subtraction is    :"+(num1-num2));
+		System.out.println("Multiplication is :"+num1*num2);
+		System.out.println("Division is       :"+num1/num2);
+		System.out.println("Modulus is        :"+num1%num2);
+	}
+}
+Output:
+Hello This is Simple Calculator...
+Addition is       :10020
+Subtraction is    :80
+Multiplication is :2000
+Division is       :5
+Modulus is        :0
+
+2.WAP for creating a banking Application .you have to take input from the user whether the user wants to deposit, withdraw, or find a current balance.
+package com.demo;
+
+public class A 
+{
+	public static void main(String[] args) 
+    {
+    	int account_Number = 434567;
+    	String  account_HolderName = "Ankita Yemul";
+    	
+    	double initial_Amount = 50000.00;
+    	double deposit_Amount = 7000.00;
+    	double withdrawl_Amount = 2000.00;
+    	double result;
+    	
+    	System.out.println("Acount Number :");
+    	System.out.println(account_Number);
+    	System.out.println("Name Of Account Holder :");
+    	System.out.println(account_HolderName);
+    	System.out.println("Initial Amount in Account :");
+    	System.out.println(initial_Amount);
+    	
+    	System.out.println("----------------------------");
+    	
+    	System.out.println("Deposit Operation :");
+    	result = initial_Amount+deposit_Amount;
+    	System.out.println("Amount Deposited..");
+    	
+    	System.out.println("----------------------------");
+    	
+    	System.out.println("Withdrawl Operation :");
+    	result=result-withdrawl_Amount;
+    	System.out.println("Amount Withdrawn succesfully.");
+    	
+    	System.out.println("-----------------------------");
+    	
+    	System.out.println("Printing Final Balance : ");
+    	System.out.println(result);
+    }
+}
+Output:
+Acount Number :
+434567
+Name Of Account Holder :
+Ankita Yemul
+Initial Amount in Account :
+50000.0
+----------------------------
+Deposit Operation :
+Amount Deposited..
+----------------------------
+Withdrawl Operation :
+Amount Withdrawn succesfully.
+-----------------------------
+Printing Final Balance : 
+55000.0

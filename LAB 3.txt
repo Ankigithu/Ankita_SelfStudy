@@ -1,0 +1,86 @@
+LAB 3 
+1.Write a program to demonstrate all primitive datatypes in Java.
+package com.demo;
+
+public class DemoType 
+{
+	public static void main(String[] args) 
+	{
+		System.out.println("Welcome to JAVA Primitive Data Types....!");
+		boolean ankita = true;
+		System.out.println(ankita);
+		byte b=123;
+	    System.out.println(b); 
+	    short temp;
+	    temp = -150;
+	    System.out.println(temp);
+	    int banana = 3;
+	    System.out.println(banana);
+	    long range = 4123456000L;
+	    System.out.println(range);
+	    double n = 12.5678;
+	    System.out.println(n);
+	    float f = 434.3f;
+	    System.out.println(f);
+	    char c = 'A';
+	    System.out.println(c);
+	}
+}
+Output :
+Welcome to JAVA Primitive Data Types....!
+true
+123
+-150
+3
+4123456000
+12.5678
+434.3
+A
+
+2.Write a program to input student marks of multiple subject..print total of marks , result depending on percentage.
+package com.demo;
+import java.util.*;
+public class Student 
+{
+	public static void main(String[] args) 
+	{
+		   
+		        Scanner sc = new Scanner(System.in);
+		        int m1, m2, m3, m4, m5;
+		        
+		        System.out.print("Enter marks for Subject 1: ");
+		        m1 = sc.nextInt();
+		        
+		        System.out.print("Enter marks for Subject 2: ");
+		        m2 = sc.nextInt();
+		        
+		        System.out.print("Enter marks for Subject 3: ");
+		        m3 = sc.nextInt();
+		        
+		        System.out.print("Enter marks for Subject 4: ");
+		        m4 = sc.nextInt();
+		        
+		        System.out.print("Enter marks for Subject 5: ");
+		        m5 = sc.nextInt();
+		        
+		        int total_marks = m1 + m2 + m3 + m4 + m5;
+		        int total_marks_possible = 500; 
+		        
+		        float percentage = (float) total_marks / total_marks_possible * 100;
+		        
+		        System.out.println("Total Marks: " + total_marks);
+		        System.out.println("Percentage: " + percentage + "%");
+		        
+		        sc.close();
+		    }
+	}
+
+OUTPUT:
+Enter marks for Subject 1: 50
+Enter marks for Subject 2: 50
+Enter marks for Subject 3: 33
+Enter marks for Subject 4: 39
+Enter marks for Subject 5: 59
+Total Marks: 231
+Percentage: 46.2%
+
